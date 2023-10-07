@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/themeprovider";
+import { ModalProvider } from "@/components/providers/modal-provider";
 const inter = Inter({ subsets: ["latin"] });
 import { ClerkProvider } from "@clerk/nextjs";
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({
             enableSystem={false}
             storageKey="notes-theme"
           >
+            <ModalProvider />
             {children}
           </ThemeProvider>
         </body>
