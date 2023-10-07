@@ -40,7 +40,7 @@ export function ModeToggle() {
 
   return (
     <label
-      className="swap swap-rotate  z-50 right-3 top-24 fixed rounded-lg bg-black pr-10 opacity-75 translate-y-44"
+      className="swap swap-rotate  z-50 right-3 top-24 fixed rounded-lg bg-black pr-10 opacity-75 translate-y-44 "
       onClick={() => {
         const randomNumber = Math.floor(Math.random() * 27) + 1;
         console.log(randomNumber);
