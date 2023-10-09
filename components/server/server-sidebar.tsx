@@ -9,7 +9,7 @@ import { db } from "@/lib/db";
 
 import { ServerHeader } from "./server-header";
 import { ServerSearch } from "./server-search";
-// import { ServerSection } from "./server-section";
+import { ServerSection } from "./server-section";
 // import { ServerChannel } from "./server-channel";
 // import { ServerMember } from "./server-member";
 
@@ -122,12 +122,12 @@ export const ServerSidebar = async ({
         <Separator className=" bg-primary rounded-md my-2" />
         {!!textChannels?.length && (
           <div className="mb-2">
-            {/* <ServerSection
+            <ServerSection
               sectionType="channels"
               channelType={ChannelType.TEXT}
               role={role}
               label="Text Channels"
-            /> */}
+            />
             <div className="space-y-[2px]">
               {/* {textChannels.map((channel) => (
                 <ServerChannel
@@ -142,12 +142,12 @@ export const ServerSidebar = async ({
         )}
         {!!audioChannels?.length && (
           <div className="mb-2">
-            {/* <ServerSection
+            <ServerSection
               sectionType="channels"
               channelType={ChannelType.AUDIO}
               role={role}
               label="Voice Channels"
-            /> */}
+            />
             <div className="space-y-[2px]">
               {/* {audioChannels.map((channel) => (
                 <ServerChannel
@@ -162,12 +162,12 @@ export const ServerSidebar = async ({
         )}
         {!!videoChannels?.length && (
           <div className="mb-2">
-            {/* <ServerSection
+            <ServerSection
               sectionType="channels"
               channelType={ChannelType.VIDEO}
               role={role}
               label="Video Channels"
-            /> */}
+            />
             <div className="space-y-[2px]">
               {/* {videoChannels.map((channel) => (
                 <ServerChannel
@@ -182,12 +182,12 @@ export const ServerSidebar = async ({
         )}
         {!!members?.length && (
           <div className="mb-2">
-            {/* <ServerSection
+            <ServerSection
               sectionType="members"
               role={role}
               label="Members"
               server={server}
-            /> */}
+            />
             <div className="space-y-[2px]">
               {/* {members.map((member) => (
                 <ServerMember
