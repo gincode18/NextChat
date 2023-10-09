@@ -8,7 +8,7 @@ import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
 
 import { ServerHeader } from "./server-header";
-// import { ServerSearch } from "./server-search";
+import { ServerSearch } from "./server-search";
 // import { ServerSection } from "./server-section";
 // import { ServerChannel } from "./server-channel";
 // import { ServerMember } from "./server-member";
@@ -78,7 +78,7 @@ export const ServerSidebar = async ({
       />
       <ScrollArea className="flex-1 px-3">
         <div className="mt-2">
-          {/* <ServerSearch
+          <ServerSearch
             data={[
               {
                 label: "Text Channels",
@@ -117,7 +117,7 @@ export const ServerSidebar = async ({
                 }))
               },
             ]}
-          /> */}
+          />
         </div>
         <Separator className=" bg-primary rounded-md my-2" />
         {!!textChannels?.length && (
