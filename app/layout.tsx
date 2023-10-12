@@ -22,7 +22,7 @@ export default function RootLayout({
           {" "}
           <ThemeProvider
             attribute="data-theme"
-            defaultTheme="cyberpunk"
+            defaultTheme="dark"
             enableSystem={false}
             storageKey="notes-theme"
           >

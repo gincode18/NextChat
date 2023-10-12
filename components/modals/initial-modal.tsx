@@ -2,6 +2,7 @@
 
 import axios from "axios";
 import * as z from "zod";
+import { UserButton } from "@clerk/nextjs";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
@@ -73,7 +74,7 @@ export const InitialModal = () => {
 
   return (
     <Dialog open>
-      <DialogContent className="bg-base-100  p-0 overflow-hidden">
+      <DialogContent className="bg-base-100  p-0 ">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center text-primary font-bold">
             Customize your server
@@ -86,7 +87,7 @@ export const InitialModal = () => {
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             <div className="space-y-8 px-6">
-              <div className="flex items-center justify-center text-center">
+              <div className="flex items-center justify-center text-center -z-40">
                 <FormField
                   control={form.control}
                   name="imageUrl"
