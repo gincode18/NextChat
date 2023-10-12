@@ -54,7 +54,7 @@ export const InviteModal = () => {
 
   return (
     <Dialog open={isModalOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-white text-black p-0 overflow-hidden">
+      <DialogContent className=" bg-base-100 p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
             Invite Friends
@@ -83,7 +83,7 @@ export const InviteModal = () => {
             disabled={isLoading}
             variant="link"
             size="sm"
-            className="text-xs text-zinc-500 mt-4"
+            className="text-xs  mt-4"
           >
             Generate a new link
             {isLoading ? (
