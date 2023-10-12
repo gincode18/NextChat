@@ -1,5 +1,5 @@
 import { NavigationSidebar } from "@/components/navigation/navigation-sidebar";
-
+import { ModeToggle } from "@/components/ToggleTheme";
 const MainLayout = async ({
   children
 }: {
@@ -11,6 +11,7 @@ const MainLayout = async ({
         <NavigationSidebar />
       </div>
       <main className="md:pl-[72px] h-full">
+        <ModeToggle></ModeToggle>
         {children}
       </main>
     </div>

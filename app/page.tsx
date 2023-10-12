@@ -24,7 +24,6 @@ const SetupPage = async () => {
 
   return (
     <>
-      <ModeToggle></ModeToggle>
       <InitialModal />
     </>
   );

@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useModal } from "@/hooks/use-modal-store";
-// import { EmojiPicker } from "@/components/emoji-picker";
+import { EmojiPicker } from "@/components/emoji-picker";
 
 interface ChatInputProps {
   apiUrl: string;
@@ -76,20 +76,20 @@ export const ChatInput = ({
                   <button
                     type="button"
                     onClick={() => onOpen("messageFile", { apiUrl, query })}
-                    className="absolute top-7 left-8 h-[24px] w-[24px] bg-zinc-500 dark:bg-zinc-400 hover:bg-zinc-600 dark:hover:bg-zinc-300 transition rounded-full p-1 flex items-center justify-center"
+                    className="absolute top-7 left-8 h-[24px] w-[24px] bg-secondary hover:bg-accent  transition rounded-full p-1 flex items-center justify-center"
                   >
-                    <Plus className="text-white dark:text-[#313338]" />
+                    <Plus className=" text-primary hover:text-secondary " />
                   </button>
                   <Input
                     disabled={isLoading}
-                    className="px-14 py-6 bg-zinc-200/90 dark:bg-zinc-700/75 border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 text-zinc-600 dark:text-zinc-200"
+                    className="px-14 placeholder:text-accent py-6 bg-primary-focus border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0  text-accent"
                     placeholder={`Message ${type === "conversation" ? name : "#" + name}`}
                     {...field}
                   />
                   <div className="absolute top-7 right-8">
-                    {/* <EmojiPicker
+                    <EmojiPicker
                       onChange={(emoji: string) => field.onChange(`${field.value} ${emoji}`)}
-                    /> */}
+                    />
                   </div>
                 </div>
               </FormControl>
