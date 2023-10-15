@@ -49,7 +49,6 @@ const ChannelIdPage = async ({
         serverId={channel.serverId}
         type="channel"
       />
-      {channel.name}
       {channel.type === ChannelType.TEXT && (
         <>
           {/* <ChatMessages

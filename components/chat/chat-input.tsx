@@ -82,7 +82,7 @@ export const ChatInput = ({
                   </button>
                   <Input
                     disabled={isLoading}
-                    className="px-14 placeholder:text-accent py-6 bg-primary-focus border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0  text-accent"
+                    className="px-14 placeholder:text-accent py-6 bg-primary-focus border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 "
                     placeholder={`Message ${type === "conversation" ? name : "#" + name}`}
                     {...field}
                   />
