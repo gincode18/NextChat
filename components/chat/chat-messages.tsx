@@ -1,16 +1,16 @@
 "use client";
 
 import { Fragment, useRef, ElementRef } from "react";
-// import { format } from "date-fns";
+import { format } from "date-fns";
 import { Member, Message, Profile } from "@prisma/client";
 import { Loader2, ServerCrash } from "lucide-react";
 
-// import { useChatQuery } from "@/hooks/use-chat-query";
+import { useChatQuery } from "@/hooks/use-chat-query";
 // import { useChatSocket } from "@/hooks/use-chat-socket";
 // import { useChatScroll } from "@/hooks/use-chat-scroll";
 
-// import { ChatWelcome } from "./chat-welcome";
-// import { ChatItem } from "./chat-item";
+import { ChatWelcome } from "./chat-welcome";
+import { ChatItem } from "./chat-item";
 
 const DATE_FORMAT = "d MMM yyyy, HH:mm";
 
@@ -50,19 +50,19 @@ export const ChatMessages = ({
   const chatRef = useRef<ElementRef<"div">>(null);
   const bottomRef = useRef<ElementRef<"div">>(null);
 
-//   const {
-//     data,
-//     fetchNextPage,
-//     hasNextPage,
-//     isFetchingNextPage,
-//     status,
-//   } = useChatQuery({
-//     queryKey,
-//     apiUrl,
-//     paramKey,
-//     paramValue,
-//   });
-//   useChatSocket({ queryKey, addKey, updateKey });
+  const {
+    data,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+    status,
+  } = useChatQuery({
+    queryKey,
+    apiUrl,
+    paramKey,
+    paramValue,
+  });
+  // useChatSocket({ queryKey, addKey, updateKey });
 //   useChatScroll({
 //     chatRef,
 //     bottomRef,
@@ -95,13 +95,13 @@ export const ChatMessages = ({
 
   return (
     <div ref={chatRef} className="flex-1 flex flex-col py-4 overflow-y-auto">
-      {/* {!hasNextPage && <div className="flex-1" />} */}
-      {/* {!hasNextPage && (
+     <div className="flex-1" />
+    
         <ChatWelcome
           type={type}
           name={name}
         />
-      )} */}
+      
       {/* {hasNextPage && (
         <div className="flex justify-center">
           {isFetchingNextPage ? (
@@ -117,7 +117,7 @@ export const ChatMessages = ({
         </div>
       )} */}
       <div className="flex flex-col-reverse mt-auto">
-        {/* {data?.pages?.map((group, i) => (
+        {data?.pages?.map((group, i) => (
           <Fragment key={i}>
             {group.items.map((message: MessageWithMemberWithProfile) => (
               <ChatItem
@@ -135,7 +135,7 @@ export const ChatMessages = ({
               />
             ))}
           </Fragment>
-        ))} */}
+        ))}
       </div>
       <div ref={bottomRef} />
     </div>
