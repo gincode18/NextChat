@@ -28,9 +28,12 @@ export const MediaRoom = ({
 
     (async () => {
       try {
-        const resp = await fetch(`/api/livekit?room=${chatId}&username=${name}`);
+        let x = Math.floor((Math.random() * 100) + 1);
+        const resp = await fetch(`/api/livekit?room=${chatId}&username=${name}${x}`);
         const data = await resp.json();
         setToken(data.token);
+        console.log(data);
+        
       } catch (e) {
         console.log(e);
       }
