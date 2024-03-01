@@ -28,7 +28,11 @@ Welcome to **Next Chat**, an innovative project that represents the pinnacle of 
 
 Dive into the future of communication with Next Chat. Start by exploring our [GitHub repository](https://lnkd.in/gvFgJM7u) to get a glimpse of the project, its structure, and how you can contribute or use it for your own needs.
 
+## Get a glimpse of NextTube in action by clicking on the thumbnail below to watch the demo video:
 
+[![Watch the video]()](https://github.com/gincode18/NextChat/assets/91776192/f6b7cd79-50d2-4366-85ac-3f8e63ce23e4)
+
+**Next Chat** - Your ultimate solution for real-time messaging and collaboration. 🌐✨
 **Next Chat** - Your ultimate solution for real-time messaging and collaboration. 🌐✨
 
 
