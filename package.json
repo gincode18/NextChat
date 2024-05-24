@@ -48,8 +48,6 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.47.0",
-    "socket.io": "^4.7.2",
-    "socket.io-client": "^4.7.2",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7",
     "type": "^2.7.2",

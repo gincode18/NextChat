@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/themeprovider";
 import { ModalProvider } from "@/components/providers/modal-provider";
 const inter = Inter({ subsets: ["latin"] });
 import { ClerkProvider } from "@clerk/nextjs";
-import { SocketProvider } from "@/components/providers/socket-provider";
+// import { SocketProvider } from "@/components/providers/socket-provider";
 import { QueryProvider } from "@/components/providers/query-provider";
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,10 +28,10 @@ export default function RootLayout({
             enableSystem={false}
             storageKey="notes-theme"
           >
-            <SocketProvider>
+            {/* <SocketProvider> */}
               <ModalProvider />
               <QueryProvider>{children}</QueryProvider>
-            </SocketProvider>
+            {/* </SocketProvider> */}
           </ThemeProvider>
         </body>
       </html>
