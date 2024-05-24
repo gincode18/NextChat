@@ -1,3 +1,12 @@
+# Live
+
+https://form-wave-amber.vercel.app/
+
+# TestUser
+
+Username : gincode18test
+Password : Spark@123\*
+
 # Next Chat 🚀
 
 Welcome to **Next Chat**, an innovative project that represents the pinnacle of real-time, full-stack communication solutions. This application is designed to elevate your messaging and collaboration experience through a combination of cutting-edge features and a sleek user interface.
@@ -34,6 +43,5 @@ Dive into the future of communication with Next Chat. Start by exploring our [Gi
 
 **Next Chat** - Your ultimate solution for real-time messaging and collaboration. 🌐✨
 **Next Chat** - Your ultimate solution for real-time messaging and collaboration. 🌐✨
-
 
 #NextChat #Communication #Innovation #RealTimeMessaging #FullStack #WebDevelopment #TechInnovation #UI #Websocket #Prisma #MySQL #Authentication #Themes
